@@ -80,4 +80,26 @@
 
 #subnav-div {
   display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.submenu-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu-row a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+#file-menu:hover #subnav-div {
+  display: block;
+}
+/*sub menu color when hovered */
+#subnav-div .submenu-row a:hover {
+  background-color: lightblue; /* Change the background color as desired */
 }
