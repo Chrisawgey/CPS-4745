@@ -29,9 +29,24 @@ LeftSide
   </div>
 </li>
 
+<li id="view-menu-container">
+  <a href="#">View</a>
+  <div id="view-subnav-div">
+    <div class="submenu-row">
+      <a href="#">View Option 1</a>
+      <a href="#">View Option 2</a>
+      <a href="#">View Option 3</a>
+    </div>
+  </div>
+</li>
+
+
+
 <!--End of File Submenu-->
    
-<li><a href="#">View</a></li>
+       <!-- Remove this redundant list item -->
+      <!-- <li><a href="#">View</a></li> -->
+
        <li><a href="#">Setting</a></li>
        <li><a href="#">Help</a></li>
     </ul>
@@ -57,7 +72,6 @@ LeftSide
     <!--end of rightbottom div-->
 
 </div>
-
 <script>
   // get ref to the menu item container and the submenu
 const fileMenuContainer = document.getElementById('file-menu-container');
@@ -72,7 +86,21 @@ fileMenuContainer.addEventListener('mouseleave', () => {
   subnavDiv.style.display = 'none';
 });
 
+const viewMenuContainer = document.getElementById('view-menu-container');
+const viewSubnavDiv = document.getElementById('view-subnav-div');
+
+viewMenuContainer.addEventListener('mouseenter', () => {
+  viewSubnavDiv.style.display = 'block';
+});
+
+viewMenuContainer.addEventListener('mouseleave', () => {
+  viewSubnavDiv.style.display = 'none';
+});
+
+
 </script>
+
+
 
 </body>
 </html>

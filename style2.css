@@ -42,7 +42,7 @@
 }
 
 #navbar-div {
-  width: 25%; /* Take the full width of the screen */
+  width: 25%; /* Take the full width of the screen */ 
   min-height: 20px;
   background-color: cyan;
   line-height: 20px;
@@ -80,7 +80,7 @@
 
 #subnav-div {
   display: none;
-  position: absolute;
+  position: absolute; 
   background-color: white;
   border: 1px solid black;
 }
@@ -101,5 +101,32 @@
 }
 /*sub menu color when hovered */
 #subnav-div .submenu-row a:hover {
+  background-color: lightblue; /* Change the background color as desired */
+}
+
+#view-menu-container:hover #view-subnav-div {
+  display: block;
+}
+
+#view-subnav-div {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#view-subnav-div .submenu-row {
+  display: flex;
+  flex-direction: column;
+}
+
+#view-subnav-div .submenu-row a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+#view-subnav-div .submenu-row a:hover {
   background-color: lightblue; /* Change the background color as desired */
 }
