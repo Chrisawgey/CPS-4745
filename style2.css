@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #main-div {
+    width: 100%;
+  }
+  
+  #leftside-div {
+    width: 25%;
+    min-height: 640px;
+    background-color: white;
+    float: left;
+    line-height: 640px;
+    border: 2px solid black;
+  }
+  
+  #righttop-div {
+    width: 75%;
+    min-height: 400px;
+    background-color: grey;
+    border: 1px solid black;
+    line-height: 400px;
+    float: right;
+  }
+  
+  #rightbottom-div {
+    width: 75%;
+    min-height: 240px;
+    background-color: grey;
+    border: 1px solid black;
+    line-height: 240px;
+    float: right;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  #navbar-div {
+    width: 25%; /* Take the full width of the screen */
+    min-height: 20px;
+    background-color: cyan;
+    line-height: 20px;
+    border: 2px solid black;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    text-align: center;
+    position: fixed; /* Fixed position at the top */
+  }
+  
+  #navbar-div ul {
+    list-style: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #navbar-div ul li {
+    display: inline-block; /* Display li elements inline */
+    margin: 5px;
+    padding: 2px;
+  }
+  
+  #navbar-div ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #navbar-div ul li:hover {
+    background: lightgrey;
+    border-radius: 3px;
+  }
+  
+  #subnav-div {
+    display: none;
+  }
+  

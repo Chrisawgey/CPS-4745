@@ -1,0 +1,109 @@
+*
+{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	
+}
+
+#main-div
+{
+	width:100%;
+}
+
+
+
+#righttop-div
+{
+	width:75%;
+	min-height:400px;
+	background-color:grey;
+	border: 1px solid black;
+	line-height:400px;
+	float:right;
+	
+}
+
+#rightbottom-div
+{
+	width:75%;
+	min-height:240px;
+	background-color:grey;
+	border: 1px solid black;
+	line-height:240px;
+	float:right;
+
+}
+
+#navbar-div
+{
+	width: 25%;
+	min-height: 20px;
+	background-color: cyan;
+	line-height: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: 2px solid black;
+	position: absolute;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0px;
+	left: 0px;
+	top: 0px;
+	text-align: center;
+	float:left;
+
+
+}
+
+#navbar-div ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: black;
+}
+
+#navbar-div ul li
+{
+	width:20%;
+	margin:3px;
+	padding:3px;
+	
+}
+
+#navbar-div ul li a
+{
+	text-decoration: none;
+	color:black;
+}
+
+#navbar-div ul li:hover
+{
+	background:lightgrey;
+	border-radius:3px;
+}
+
+#subnav-div 
+{ 
+	display: none;
+}
+
+#leftside-div
+{
+	width: 25%;
+	min-height: 640px;
+	background-color: white;
+	float:left;
+	line-height:640px;
+    border: 2px solid black;
+    
+}
+
+.clearfix::after
+{
+	content:"";
+	display:block;
+	clear:both;
+}
