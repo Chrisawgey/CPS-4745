@@ -47,7 +47,16 @@
               </div>
             </div>
           </li>
-          <li><a href="#">Help</a></li>
+          <li id ="help-menu-container">
+            <a href="#">Menu</a>
+            <div id="help-subnav-div">
+              <div class="submenu-row">
+                <a href="#">Help Opttion 1</a>
+                <a href="#">Help Option 2</a>
+                <a href="#">Help Option 3</a>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
       <!-- End of Navbar -->
@@ -104,6 +113,18 @@
     settingMenuContainer.addEventListener('mouseleave', () => {
       settingSubnavDiv.style.display = 'none';
     });
-  </script>
+
+    //help menu subcript
+    const helpMenuContainer = document.getElementById('help-menu-contaier');
+    const helpSubnavDiv = document.getElementById('help-subnav-div');
+
+    helpMenuContainer.addEventListener('mouseenter', () => {
+      menuSubnavDiv.style.display = 'block';
+    });
+
+    helpMenuContainer.addEventListener('mouseleave', () => {
+      menuSubnavDiv.style.display = 'none';
+    });
+   </script>
 </body>
 </html>

@@ -157,3 +157,30 @@
 #setting-subnav-div .submenu-row a:hover {
   background-color: lightblue; /* Change the background color as desired */
 }
+
+#help-menu-container:hover #help-subnav-div {
+  display: block;
+}
+
+#help-subnav-div {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#help-subnav-div .submenu-row {
+  display: flex;
+  flex-direction: column;
+}
+
+#help-subnav-div .submenu-row a{
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+#help-subnav-div .submenu-row a:hover{
+  background-color: lightblue;
+}
