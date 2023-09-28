@@ -3,105 +3,107 @@
 <head>
   <title>A Meaningful Page Title</title>
   <link rel="stylesheet" href="style2.css">
- 
-
 </head>
 <body>
-
-<!--start maindiv-->
-<div id="main-div" class="clearfix">
-<!--start leftside div-->
-<div id="leftside-div">
-LeftSide
-<!--start of navbar div-->
-<div id="navbar-div">
-<ul>
-<!--Start of File Submenu-->
-<li id="file-menu-container">
-  <a href="#">File</a>
-  <div id="subnav-div">
-    <div class="submenu-row">
-      <a href="#">Load CSV file</a>
-      <a href="#">Login to DB</a>
-      <a href="#">Logout DB</a>
-      <a href="#">Exit file</a>
+  <!-- Main Container -->
+  <div id="main-div" class="clearfix">
+    <!-- Left Side -->
+    <div id="leftside-div">
+      LeftSide
+      <!-- Navbar -->
+      <div id="navbar-div">
+        <ul>
+          <!-- File Submenu -->
+          <li id="file-menu-container">
+            <a href="#">File</a>
+            <div id="subnav-div">
+              <div class="submenu-row">
+                <a href="#">Load CSV file</a>
+                <a href="#">Login to DB</a>
+                <a href="#">Logout DB</a>
+                <a href="#">Exit file</a>
+              </div>
+            </div>
+          </li>
+          <!-- View Submenu -->
+          <li id="view-menu-container">
+            <a href="#">View</a>
+            <div id="view-subnav-div">
+              <div class="submenu-row">
+                <a href="#">View Option 1</a>
+                <a href="#">View Option 2</a>
+                <a href="#">View Option 3</a>
+              </div>
+            </div>
+          </li>
+          <!-- Settings Submenu -->
+          <li id="setting-menu-container">
+            <a href="#">Settings</a>
+            <div id="setting-subnav-div">
+              <div class="submenu-row">
+                <a href="#">Setting Option 1</a>
+                <a href="#">Setting Option 2</a>
+                <a href="#">Setting Option 3</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+      <!-- End of Navbar -->
     </div>
-  </div>
-</li>
+    <!-- End of Left Side -->
 
-<li id="view-menu-container">
-  <a href="#">View</a>
-  <div id="view-subnav-div">
-    <div class="submenu-row">
-      <a href="#">View Option 1</a>
-      <a href="#">View Option 2</a>
-      <a href="#">View Option 3</a>
-    </div>
-  </div>
-</li>
-
-
-
-<!--End of File Submenu-->
-   
-       <!-- Remove this redundant list item -->
-      <!-- <li><a href="#">View</a></li> -->
-
-       <li><a href="#">Setting</a></li>
-       <li><a href="#">Help</a></li>
-    </ul>
-
-</div>
-<!--end of navbar div-->
-
-</div>
-<!--leftside end of div-->
-
-
-<!--start of righttop div-->
+    <!-- Right Top -->
     <div id="righttop-div">
-    This is a graph
+      This is a graph
     </div>
-    <!--end of righttop div-->
+    <!-- End of Right Top -->
 
-
-    <!--start of rightbottom div-->
+    <!-- Right Bottom -->
     <div id="rightbottom-div">
-    This is a spreadsheet
+      This is a spreadsheet
     </div>
-    <!--end of rightbottom div-->
+    <!-- End of Right Bottom -->
+  </div>
 
-</div>
-<script>
-  // get ref to the menu item container and the submenu
-const fileMenuContainer = document.getElementById('file-menu-container');
-const subnavDiv = document.getElementById('subnav-div');
+  <!-- JavaScript -->
+  <script>
+    // File menu script
+    const fileMenuContainer = document.getElementById('file-menu-container');
+    const subnavDiv = document.getElementById('subnav-div');
 
-// add event listener to show/hide the submenu
-fileMenuContainer.addEventListener('mouseenter', () => {
-  subnavDiv.style.display = 'block';
-});
+    fileMenuContainer.addEventListener('mouseenter', () => {
+      subnavDiv.style.display = 'block';
+    });
 
-fileMenuContainer.addEventListener('mouseleave', () => {
-  subnavDiv.style.display = 'none';
-});
+    fileMenuContainer.addEventListener('mouseleave', () => {
+      subnavDiv.style.display = 'none';
+    });
 
-const viewMenuContainer = document.getElementById('view-menu-container');
-const viewSubnavDiv = document.getElementById('view-subnav-div');
+    // View menu script
+    const viewMenuContainer = document.getElementById('view-menu-container');
+    const viewSubnavDiv = document.getElementById('view-subnav-div');
 
+    viewMenuContainer.addEventListener('mouseenter', () => {
+      viewSubnavDiv.style.display = 'block';
+    });
 
-viewMenuContainer.addEventListener('mouseenter', () => {
-  viewSubnavDiv.style.display = 'block';
-});
+    viewMenuContainer.addEventListener('mouseleave', () => {
+      viewSubnavDiv.style.display = 'none';
+    });
 
-viewMenuContainer.addEventListener('mouseleave', () => {
-  viewSubnavDiv.style.display = 'none';
-});
+    // Settings menu script
+    const settingMenuContainer = document.getElementById('setting-menu-container');
+    const settingSubnavDiv = document.getElementById('setting-subnav-div');
 
+    settingMenuContainer.addEventListener('mouseenter', () => {
+      settingSubnavDiv.style.display = 'block';
+    });
 
-</script>
-
-
-
+    settingMenuContainer.addEventListener('mouseleave', () => {
+      settingSubnavDiv.style.display = 'none';
+    });
+  </script>
 </body>
 </html>

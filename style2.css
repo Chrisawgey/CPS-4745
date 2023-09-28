@@ -130,3 +130,30 @@
 #view-subnav-div .submenu-row a:hover {
   background-color: lightblue; /* Change the background color as desired */
 }
+
+#setting-menu-container:hover #setting-subnav-div {
+  display: block;
+}
+
+#setting-subnav-div {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#setting-subnav-div .submenu-row {
+  display: flex;
+  flex-direction: column;
+}
+
+#setting-subnav-div .submenu-row a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+#setting-subnav-div .submenu-row a:hover {
+  background-color: lightblue; /* Change the background color as desired */
+}
