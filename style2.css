@@ -1,186 +1,236 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
 }
 
-#main-div {
-  width: 100%;
+#main-div
+{
+	width:100%;
 }
 
-#leftside-div {
-  width: 25%;
-  min-height: 640px;
-  background-color: white;
-  float: left;
-  line-height: 640px;
-  border: 2px solid black;
+#leftside-div
+{
+	width: 25%;
+	min-height: 640px;
+	background-color: white;
+	float:left;
+	line-height:640px;
+    border: 2px solid black;
+    
 }
 
-#righttop-div {
-  width: 75%;
-  min-height: 400px;
-  background-color: grey;
-  border: 1px solid black;
-  line-height: 400px;
-  float: right;
+#righttop-div
+{
+	width:75%;
+	min-height:400px;
+	background-color:grey;
+	border: 1px solid black;
+	line-height: 400px;
+	float:right;
+	
 }
 
-#rightbottom-div {
-  width: 75%;
-  min-height: 240px;
-  background-color: grey;
-  border: 1px solid black;
-  line-height: 240px;
-  float: right;
+#rightbottom-div
+{
+	width:75%;
+	min-height:240px;
+	background-color:grey;
+	border: 1px solid black;
+	line-height: 240px;
+	float:right;
+
 }
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+
+.clearfix::after
+{
+	content:"";
+	display:block;
+	clear:both;
 }
 
-#navbar-div {
-  width: 25%; /* Take the full width of the screen */ 
-  min-height: 20px;
-  background-color: cyan;
-  line-height: 20px;
-  border: 2px solid black;
-  padding: 0;
-  margin: 0;
-  left: 0;
-  top: 0;
-  text-align: center;
-  position: fixed; /* Fixed position at the top */
+#navbar-div
+{
+	width: 25%; /*Takes the full width of the left side of the screen*/
+	min-height: 20px;
+	background-color: cyan;
+	line-height: 20px;
+	border: 2px solid black;
+	position: absolute;
+	padding:0;
+	margin: 0;
+	left: 0px;
+	top: 0px;
+	text-align: center;
+	position: fixed; /* fixed position at the top*/
+	/*float:left;*/
 }
 
-#navbar-div ul {
-  list-style: none;
-  color: black;
-  padding: 0;
-  margin: 0;
+#navbar-div ul
+{
+	/*display: inline-flex;*/
+	list-style: none;
+	color: black;
+	padding:0;
+	margin:0;
+	
 }
 
-#navbar-div ul li {
-  display: inline-block; /* Display li elements inline */
-  margin: 5px;
-  padding: 2px;
+#navbar-div ul li
+{
+	display: inline-block; /*Display li elements inline*/
+	/*width: auto;*/
+	margin:5px;
+	padding:2px;
+	
 }
 
-#navbar-div ul li a {
-  text-decoration: none;
-  color: black;
+#navbar-div ul li a
+{
+	text-decoration:none;
+	color:black;
 }
 
-#navbar-div ul li:hover {
-  background: lightgrey;
-  border-radius: 3px;
+#navbar-div ul li:hover
+{
+	background:lightgrey;
+	border-radius:3px;
 }
 
-#subnav-div {
-  display: none;
-  position: absolute; 
-  background-color: white;
-  border: 1px solid black;
+#subnav-div 
+{ 
+	display: none;
+	position: absolute;
+	background-color: white;
+	border: 1px solid black;
 }
 
-.submenu-row {
-  display: flex;
-  flex-direction: column;
+
+.submenu-file-div
+{
+	display: flex;
+	flex-direction: column;
 }
 
-.submenu-row a {
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-  border-bottom: 1px solid black;
+
+.submenu-file-div a
+{
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	border-bottom: 1px solid black;
 }
-#file-menu:hover #subnav-div {
-  display: block;
+
+#file-menu:hover #subnav-div
+{
+	display:block;
 }
+
 /*sub menu color when hovered */
-#subnav-div .submenu-row a:hover {
-  background-color: lightblue; /* Change the background color as desired */
+#subnav-div .submenu-file-div a:hover 
+{
+	background-color: lightgrey; /*Makes the hover background color as desired */
 }
 
-#view-menu-container:hover #view-subnav-div {
-  display: block;
+#view-menu-container:hover #view-subnav-div
+{
+	display:block
 }
 
-#view-subnav-div {
-  display: none;
-  position: absolute;
-  background-color: white;
-  border: 1px solid black;
+#view-subnav-div
+{
+	display:none;
+	position: absolute;
+	background-color: white;
+	border: 1px solid black;
 }
 
-#view-subnav-div .submenu-row {
-  display: flex;
-  flex-direction: column;
+#view-subnav-div .submenu-view-div
+{
+	display: flex;
+	flex-direction: column;
 }
 
-#view-subnav-div .submenu-row a {
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-  border-bottom: 1px solid black;
+#view-subnav-div .submenu-view-div a
+{
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	border-bottom: 1px solid black;
 }
 
-#view-subnav-div .submenu-row a:hover {
-  background-color: lightblue; /* Change the background color as desired */
+#view-subnav-div .submenu-view-div a:hover
+{
+	background-color: lightgrey; /*Makes the hover background color as desired */
 }
 
-#setting-menu-container:hover #setting-subnav-div {
-  display: block;
+
+
+#setting-menu-container:hover #setting-subnav-div
+{
+	display:block
 }
 
-#setting-subnav-div {
-  display: none;
-  position: absolute;
-  background-color: white;
-  border: 1px solid black;
+#setting-subnav-div
+{
+	display:none;
+	position: absolute;
+	background-color: white;
+	border: 1px solid black;
 }
 
-#setting-subnav-div .submenu-row {
-  display: flex;
-  flex-direction: column;
+#setting-subnav-div .submenu-setting-div
+{
+	display: flex;
+	flex-direction: column;
 }
 
-#setting-subnav-div .submenu-row a {
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-  border-bottom: 1px solid black;
+#setting-subnav-div .submenu-setting-div a
+{
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	border-bottom: 1px solid black;
 }
 
-#setting-subnav-div .submenu-row a:hover {
-  background-color: lightblue; /* Change the background color as desired */
+#setting-subnav-div .submenu-setting-div a:hover
+{
+	background-color: lightgrey; /*Makes the hover background color as desired */
 }
 
-#help-menu-container:hover #help-subnav-div {
-  display: block;
+
+
+#help-menu-container:hover #help-subnav-div
+{
+	display:block
 }
 
-#help-subnav-div {
-  display: none;
-  position: absolute;
-  background-color: white;
-  border: 1px solid black;
+#help-subnav-div
+{
+	display:none;
+	position: absolute;
+	background-color: white;
+	border: 1px solid black;
 }
 
-#help-subnav-div .submenu-row {
-  display: flex;
-  flex-direction: column;
+#help-subnav-div .submenu-help-div
+{
+	display: flex;
+	flex-direction: column;
 }
 
-#help-subnav-div .submenu-row a{
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-  border-bottom: 1px solid black;
+#help-subnav-div .submenu-help-div a
+{
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	border-bottom: 1px solid black;
 }
 
-#help-subnav-div .submenu-row a:hover{
-  background-color: lightblue;
+#help-subnav-div .submenu-help-div a:hover
+{
+	background-color: lightgrey; /*Makes the hover background color as desired */
 }

@@ -3,128 +3,166 @@
 <head>
   <title>A Meaningful Page Title</title>
   <link rel="stylesheet" href="style2.css">
+ 
+
 </head>
 <body>
-  <!-- Main Container -->
-  <div id="main-div" class="clearfix">
-    <!-- Left Side -->
-    <div id="leftside-div">
-      LeftSide
-      <!-- Navbar -->
-      <div id="navbar-div">
-        <ul>
-          <!-- File Submenu -->
-          <li id="file-menu-container">
-            <a href="#">File</a>
-            <div id="subnav-div">
-              <div class="submenu-row">
-                <a href="#">Load CSV file</a>
-                <a href="#">Login to DB</a>
-                <a href="#">Logout DB</a>
-                <a href="#">Exit file</a>
-              </div>
-            </div>
-          </li>
-          <!-- View Submenu -->
-          <li id="view-menu-container">
-            <a href="#">View</a>
-            <div id="view-subnav-div">
-              <div class="submenu-row">
-                <a href="#">View Option 1</a>
-                <a href="#">View Option 2</a>
-                <a href="#">View Option 3</a>
-              </div>
-            </div>
-          </li>
-          <!-- Settings Submenu -->
-          <li id="setting-menu-container">
-            <a href="#">Settings</a>
-            <div id="setting-subnav-div">
-              <div class="submenu-row">
-                <a href="#">Setting Option 1</a>
-                <a href="#">Setting Option 2</a>
-                <a href="#">Setting Option 3</a>
-              </div>
-            </div>
-          </li>
-          <li id ="help-menu-container">
-            <a href="#">Menu</a>
-            <div id="help-subnav-div">
-              <div class="submenu-row">
-                <a href="#">Help Opttion 1</a>
-                <a href="#">Help Option 2</a>
-                <a href="#">Help Option 3</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- End of Navbar -->
-    </div>
-    <!-- End of Left Side -->
 
-    <!-- Right Top -->
+<!--start maindiv-->
+<div id="main-div" class="clearfix">
+	<!--start leftside div-->
+	<div id="leftside-div"> 
+	LeftSide
+		 <!--start of navbar div-->
+		<div id="navbar-div">
+			<ul>
+				<!--Start of File Submenu-->
+				<li id="file-menu-container"> 
+					<a href="#">File</a>
+					<div id="subnav-div">
+						<div class="submenu-file-div">
+								<a href="#">Load CSV file</a>
+								<a href="#">Login to DB</a>
+								<a href="#">Logout DB</a>
+								<a href="#">Exit file</a>
+						</div>
+						<!--end of submenu file div-->
+					</div>
+					<!--end of subnav div-->
+				</li> 
+				<!--End of File Submenu-->
+
+				<!--Start of View Submenu-->
+				<li id="view-menu-container">
+					<a href="#">View</a>
+					<div id="view-subnav-div">
+						<div class="submenu-view-div">
+								<a href="#">Line</a>
+								<a href="#">Pie</a>
+								<a href="#">Bar</a>
+								<a href="#">Map</a>
+						</div>
+						<!--end of submenu view div-->
+					</div>
+					<!--end of view subnav div-->
+				</li>
+				<!--End of View Submenu-->
+
+                
+
+				<!--Start of Setting Submenu-->
+				<li id="setting-menu-container">
+					<a href="#">Setting</a>
+					<div id="setting-subnav-div">
+						<div class="submenu-setting-div">
+								<a href="#">User Info</a>
+						</div>
+						<!--end of submenu setting div-->
+					</div>
+					<!--end of setting subnav div-->
+				</li>
+				<!--End of Setting Submenu-->
+
+
+				
+		        
+				<!--Start of Help Submenu-->
+				<li id="help-menu-container">
+					<a href="#">Help</a>
+					<div id="help-subnav-div">
+						<div class="submenu-help-div">
+								<a href="#">Info</a>
+								<a href="#">Client</a>
+						</div>
+						<!--end of submenu help div-->
+					</div>
+					<!--end of help subnav div-->
+				</li>
+				<!--End of Help Submenu-->
+
+				
+	    	</ul>
+
+		</div>
+		<!--end of navbar div-->
+
+	</div> 
+	<!--leftside end of div-->
+
+
+	<!--start of righttop div-->
     <div id="righttop-div">
-      This is a graph
+    This is a graph
     </div>
-    <!-- End of Right Top -->
+    <!--end of righttop div-->
 
-    <!-- Right Bottom -->
+
+    <!--start of rightbottom div-->
     <div id="rightbottom-div">
-      This is a spreadsheet
+    This is a spreadsheet
     </div>
-    <!-- End of Right Bottom -->
-  </div>
+    <!--end of rightbottom div-->
 
-  <!-- JavaScript -->
-  <script>
-    // File menu script
-    const fileMenuContainer = document.getElementById('file-menu-container');
-    const subnavDiv = document.getElementById('subnav-div');
+</div>
+<!--end of maindiv-->
 
-    fileMenuContainer.addEventListener('mouseenter', () => {
-      subnavDiv.style.display = 'block';
-    });
+<script>
+	// get reference to the file menu container and the submenu (aka subnav div)
+	const fileMenuContainer = document.getElementById('file-menu-container');
+	const subnavDiv = document.getElementById('subnav-div');
+
+	//add event listener to show/hide the submenu
+	fileMenuContainer.addEventListener('mouseenter', () => { 
+		subnavDiv.style.display = 'block';
+	});
 
     fileMenuContainer.addEventListener('mouseleave', () => {
-      subnavDiv.style.display = 'none';
-    });
+		subnavDiv.style.display = 'none';
+	});
 
-    // View menu script
-    const viewMenuContainer = document.getElementById('view-menu-container');
-    const viewSubnavDiv = document.getElementById('view-subnav-div');
 
-    viewMenuContainer.addEventListener('mouseenter', () => {
-      viewSubnavDiv.style.display = 'block';
-    });
+	// get reference to the view menu container and the view submenu (aka view subnav div)
+	const viewMenuContainer = document.getElementById('view-menu-container');
+	const viewSubnavDiv = document.getElementById('view-subnav-div');
+
+	//add event listener to show/hide the submenu
+	viewMenuContainer.addEventListener('mouseenter', () => { 
+		viewSubnavDiv.style.display = 'block';
+	});
 
     viewMenuContainer.addEventListener('mouseleave', () => {
-      viewSubnavDiv.style.display = 'none';
-    });
+		viewSubnavDiv.style.display = 'none';
+	});
 
-    // Settings menu script
-    const settingMenuContainer = document.getElementById('setting-menu-container');
-    const settingSubnavDiv = document.getElementById('setting-subnav-div');
+	
+	// get reference to the setting menu container and the setting submenu (aka setting subnav div)
+	const settingMenuContainer = document.getElementById('setting-menu-container');
+	const settingSubnavDiv = document.getElementById('setting-subnav-div');
 
-    settingMenuContainer.addEventListener('mouseenter', () => {
-      settingSubnavDiv.style.display = 'block';
-    });
+	//add event listener to show/hide the submenu
+	settingMenuContainer.addEventListener('mouseenter', () => { 
+		settingSubnavDiv.style.display = 'block';
+	});
 
     settingMenuContainer.addEventListener('mouseleave', () => {
-      settingSubnavDiv.style.display = 'none';
-    });
+		settingSubnavDiv.style.display = 'none';
+	});
 
-    //help menu subcript
-    const helpMenuContainer = document.getElementById('help-menu-contaier');
-    const helpSubnavDiv = document.getElementById('help-subnav-div');
+	
+	// get reference to the help menu container and the help submenu (aka help subnav div)
+	const helpMenuContainer = document.getElementById('help-menu-container');
+	const helpSubnavDiv = document.getElementById('help-subnav-div');
 
-    helpMenuContainer.addEventListener('mouseenter', () => {
-      menuSubnavDiv.style.display = 'block';
-    });
+	//add event listener to show/hide the submenu
+	helpMenuContainer.addEventListener('mouseenter', () => { 
+		helpSubnavDiv.style.display = 'block';
+	});
 
     helpMenuContainer.addEventListener('mouseleave', () => {
-      menuSubnavDiv.style.display = 'none';
-    });
-   </script>
+		helpSubnavDiv.style.display = 'none';
+	});
+
+</script>
+
 </body>
 </html>
